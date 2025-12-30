@@ -1,4 +1,5 @@
 ﻿using ExternalAPIService.Interfaces;
+using Microsoft.Extensions.Logging;
 using System.Net.Http.Json;
 
 namespace ExternalAPIService.Services
@@ -6,10 +7,12 @@ namespace ExternalAPIService.Services
     public class PokeClientService : IPokeClientService
     {
         private readonly HttpClient _httpClient;
+        private readonly ILogger<PokeClientService> _logger;
 
-        public PokeClientService(HttpClient httpClient)
+        public PokeClientService(HttpClient httpClient, ILogger<PokeClientService> logger)
         {
             _httpClient = httpClient;
+            _logger = logger;
         }
 
         /// <summary>
@@ -19,9 +22,16 @@ namespace ExternalAPIService.Services
         /// <returns></returns>
         public async Task<dynamic> GetPokemonListAsync(int offset)
         {
-            var result = await _httpClient.GetFromJsonAsync<dynamic>(
-                $"pokemon?limit=10&&offset={offset}");
-            return result;
+            try
+            {
+                _logger.LogInformation("Started calling External List api for Pokemon");
+                return await _httpClient.GetFromJsonAsync<dynamic>(
+                    $"pokemon?limit=10&&offset={offset}");
+            }
+            catch(Exception ex) {
+                _logger.LogError(ex, "Error while calling External List api for Pokemon");
+                return null;
+            }
         }
 
         /// <summary>
@@ -31,9 +41,16 @@ namespace ExternalAPIService.Services
         /// <returns></returns>
         public async Task<dynamic> GetPokemonDataAsync(string name)
         {
-            var result = await _httpClient.GetFromJsonAsync<dynamic>(
-                $"pokemon/{name}");
-            return result;
+            try
+            {
+                _logger.LogInformation("Started calling External details api for Pokemon");
+                return await _httpClient.GetFromJsonAsync<dynamic>(
+                    $"pokemon/{name}");
+            }
+            catch (Exception ex) {
+                _logger.LogError(ex, "Error while calling External details api for Pokemon");
+                return null;
+            }
         }
     }
 }

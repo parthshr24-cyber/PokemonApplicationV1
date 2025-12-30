@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExternalAPIService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e49fe74a0462df24d979f15ffb2d0591f8fcea44")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExternalAPIService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExternalAPIService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
