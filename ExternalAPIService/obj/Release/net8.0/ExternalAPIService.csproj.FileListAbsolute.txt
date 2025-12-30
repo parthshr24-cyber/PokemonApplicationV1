@@ -1,0 +1,14 @@
+C:\Pro\ExternalAPIService\bin\Release\net8.0\ExternalAPIService.exe
+C:\Pro\ExternalAPIService\bin\Release\net8.0\ExternalAPIService.deps.json
+C:\Pro\ExternalAPIService\bin\Release\net8.0\ExternalAPIService.runtimeconfig.json
+C:\Pro\ExternalAPIService\bin\Release\net8.0\ExternalAPIService.dll
+C:\Pro\ExternalAPIService\bin\Release\net8.0\ExternalAPIService.pdb
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.AssemblyInfoInputs.cache
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.AssemblyInfo.cs
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.csproj.CoreCompileInputs.cache
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.dll
+C:\Pro\ExternalAPIService\obj\Release\net8.0\refint\ExternalAPIService.dll
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.pdb
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ExternalAPIService.genruntimeconfig.cache
+C:\Pro\ExternalAPIService\obj\Release\net8.0\ref\ExternalAPIService.dll

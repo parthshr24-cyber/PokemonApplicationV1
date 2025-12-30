@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonApplication", "PokemonApplication.csproj", "{C2B9195E-092C-4328-BB38-2531D20E6B4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonManager", "..\PokemonManager\PokemonManager.csproj", "{09AA946A-5D7C-40CB-8CBB-00407B05E9A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExternalAPIService", "..\ExternalAPIService\ExternalAPIService.csproj", "{3B1D8F7D-0618-4902-84D3-810A6166C609}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonManager.test", "..\PokemonManager.test\PokemonManager.test.csproj", "{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F49DF4C-A42A-43F9-9546-560EF6A06796}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		..\..\Users\parth\Downloads\readme.md = ..\..\Users\parth\Downloads\readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B9195E-092C-4328-BB38-2531D20E6B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B9195E-092C-4328-BB38-2531D20E6B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B9195E-092C-4328-BB38-2531D20E6B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B9195E-092C-4328-BB38-2531D20E6B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09AA946A-5D7C-40CB-8CBB-00407B05E9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AA946A-5D7C-40CB-8CBB-00407B05E9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AA946A-5D7C-40CB-8CBB-00407B05E9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AA946A-5D7C-40CB-8CBB-00407B05E9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1D8F7D-0618-4902-84D3-810A6166C609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1D8F7D-0618-4902-84D3-810A6166C609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1D8F7D-0618-4902-84D3-810A6166C609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1D8F7D-0618-4902-84D3-810A6166C609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE6C593C-0E53-4CE7-9F24-89FEF129657D}
+	EndGlobalSection
+EndGlobal
