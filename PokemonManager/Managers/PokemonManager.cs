@@ -96,6 +96,12 @@ namespace PokemonManager.Managers
             {
                 _logger.LogInformation("Getting details from PokeAPi for: {Pokemon}", name);
                 var pokemonResponse = await _pokeApi.GetPokemonDataAsync(name);
+                if (pokemonResponse is not JsonElement element ||
+                    element.ValueKind == JsonValueKind.Null ||
+                    element.ValueKind == JsonValueKind.Undefined)
+                {
+                    return null;
+                }
                 pokemonServiceResponse = ToObject<PokemonServiceResponse>(pokemonResponse);
                 _cache.Set(cacheKey, pokemonServiceResponse);
                 _logger.LogInformation("Got details from PokeAPi for: {Pokemon}", name);

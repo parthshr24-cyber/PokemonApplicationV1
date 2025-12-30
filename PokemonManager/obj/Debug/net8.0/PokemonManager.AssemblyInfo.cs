@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokemonManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2456f78c1495fe9b23c69c95bcd9d3ad0fa1a435")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b209f41e47834d3fe0ba878ffe85f117a1c733de")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokemonManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokemonManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
