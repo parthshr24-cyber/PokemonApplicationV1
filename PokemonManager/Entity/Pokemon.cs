@@ -13,7 +13,7 @@
     {
         public string Name { get; set; }
         public string img_url { get; set; }
-        public string PokemonStory { get; set; }
+        public string? PokemonStory { get; set; }
 
     }
     public class PokemonServiceResponse

@@ -4,6 +4,7 @@ using ExternalAPIService.Interfaces;
 using ExternalAPIService.Services;
 using Azure.AI.OpenAI;
 using System.ClientModel;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,8 +20,13 @@ builder.Services.AddHttpClient<IPokeClientService, PokeClientService>(client =>
 });
 builder.Services.AddSingleton(sp =>
 {
+    var endpoint = builder.Configuration["AzureOpenAI:Endpoint"];
+    if (string.IsNullOrEmpty(endpoint) || !Uri.TryCreate(endpoint, UriKind.Absolute, out var uri))
+    {
+        return null!;
+    }
     var client = new AzureOpenAIClient(
-        new Uri(builder.Configuration["AzureOpenAI:Endpoint"]),
+        uri,
         new ApiKeyCredential(builder.Configuration["AzureOpenAI:ApiKey"]));
 
     // Return ChatClient for DI
