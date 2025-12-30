@@ -1,11 +1,5 @@
 C:\Pro\PokemonManager.test\bin\Debug\net8.0\.msCoverageSourceRootsMapping_PokemonManager.test
 C:\Pro\PokemonManager.test\bin\Debug\net8.0\testhost.dll
-C:\Pro\PokemonManager.test\bin\Debug\net8.0\ExternalAPIService.deps.json
-C:\Pro\PokemonManager.test\bin\Debug\net8.0\ExternalAPIService.runtimeconfig.json
-C:\Pro\PokemonManager.test\bin\Debug\net8.0\ExternalAPIService.exe
-C:\Pro\PokemonManager.test\bin\Debug\net8.0\PokemonManager.deps.json
-C:\Pro\PokemonManager.test\bin\Debug\net8.0\PokemonManager.runtimeconfig.json
-C:\Pro\PokemonManager.test\bin\Debug\net8.0\PokemonManager.exe
 C:\Pro\PokemonManager.test\bin\Debug\net8.0\testhost.exe
 C:\Pro\PokemonManager.test\bin\Debug\net8.0\NUnit3.TestAdapter.pdb
 C:\Pro\PokemonManager.test\bin\Debug\net8.0\nunit.engine.dll
@@ -200,3 +194,4 @@ C:\Pro\PokemonManager.test\obj\Debug\net8.0\refint\PokemonManager.test.dll
 C:\Pro\PokemonManager.test\obj\Debug\net8.0\PokemonManager.test.pdb
 C:\Pro\PokemonManager.test\obj\Debug\net8.0\PokemonManager.test.genruntimeconfig.cache
 C:\Pro\PokemonManager.test\obj\Debug\net8.0\ref\PokemonManager.test.dll
+C:\Pro\PokemonManager.test\obj\Debug\net8.0\PokemonManager.test.sourcelink.json
