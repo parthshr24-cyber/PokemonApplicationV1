@@ -979,7 +979,8 @@
         "dependencies": {
           "Azure.AI.OpenAI": "2.1.0",
           "Azure.Core": "1.50.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.1"
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.1",
+          "Pokemon.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ExternalAPIService.dll": {}
@@ -988,12 +989,23 @@
           "bin/placeholder/ExternalAPIService.dll": {}
         }
       },
+      "Pokemon.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Pokemon.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pokemon.Entities.dll": {}
+        }
+      },
       "PokemonManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ExternalAPIService": "1.0.0",
-          "Microsoft.Extensions.Caching.Abstractions": "10.0.1"
+          "Microsoft.Extensions.Caching.Abstractions": "10.0.1",
+          "Pokemon.Entities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PokemonManager.dll": {}
@@ -2288,6 +2300,11 @@
       "type": "project",
       "path": "../ExternalAPIService/ExternalAPIService.csproj",
       "msbuildProject": "../ExternalAPIService/ExternalAPIService.csproj"
+    },
+    "Pokemon.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Project.Entities/Pokemon.Entities.csproj",
+      "msbuildProject": "../Project.Entities/Pokemon.Entities.csproj"
     },
     "PokemonManager/1.0.0": {
       "type": "project",

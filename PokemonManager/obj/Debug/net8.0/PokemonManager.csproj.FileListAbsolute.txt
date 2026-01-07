@@ -14,3 +14,5 @@ C:\Pro\PokemonManager\obj\Debug\net8.0\refint\PokemonManager.dll
 C:\Pro\PokemonManager\obj\Debug\net8.0\PokemonManager.pdb
 C:\Pro\PokemonManager\obj\Debug\net8.0\ref\PokemonManager.dll
 C:\Pro\PokemonManager\obj\Debug\net8.0\PokemonManager.sourcelink.json
+C:\Pro\PokemonManager\bin\Debug\net8.0\Pokemon.Entities.dll
+C:\Pro\PokemonManager\bin\Debug\net8.0\Pokemon.Entities.pdb

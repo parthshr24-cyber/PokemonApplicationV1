@@ -1,5 +1,6 @@
 ﻿using ExternalAPIService.Interfaces;
 using Microsoft.Extensions.Logging;
+using PokemonManager.Entity;
 using System.Net.Http.Json;
 
 namespace ExternalAPIService.Services
@@ -20,12 +21,12 @@ namespace ExternalAPIService.Services
         /// </summary>
         /// <param name="offset"></param>
         /// <returns></returns>
-        public async Task<dynamic> GetPokemonListAsync(int offset)
+        public async Task<PokemonListResponse> GetPokemonListAsync(int offset)
         {
             try
             {
                 _logger.LogInformation("Started calling External List api for Pokemon");
-                return await _httpClient.GetFromJsonAsync<dynamic>(
+                return await _httpClient.GetFromJsonAsync<PokemonListResponse>(
                     $"pokemon?limit=10&&offset={offset}");
             }
             catch(Exception ex) {
@@ -39,12 +40,12 @@ namespace ExternalAPIService.Services
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public async Task<dynamic> GetPokemonDataAsync(string name)
+        public async Task<PokemonServiceResponse> GetPokemonDataAsync(string name)
         {
             try
             {
                 _logger.LogInformation("Started calling External details api for Pokemon");
-                return await _httpClient.GetFromJsonAsync<dynamic>(
+                return await _httpClient.GetFromJsonAsync<PokemonServiceResponse>(
                     $"pokemon/{name}");
             }
             catch (Exception ex) {

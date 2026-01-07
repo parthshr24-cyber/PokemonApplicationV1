@@ -195,3 +195,5 @@ C:\Pro\PokemonManager.test\obj\Debug\net8.0\PokemonManager.test.pdb
 C:\Pro\PokemonManager.test\obj\Debug\net8.0\PokemonManager.test.genruntimeconfig.cache
 C:\Pro\PokemonManager.test\obj\Debug\net8.0\ref\PokemonManager.test.dll
 C:\Pro\PokemonManager.test\obj\Debug\net8.0\PokemonManager.test.sourcelink.json
+C:\Pro\PokemonManager.test\bin\Debug\net8.0\Pokemon.Entities.dll
+C:\Pro\PokemonManager.test\bin\Debug\net8.0\Pokemon.Entities.pdb

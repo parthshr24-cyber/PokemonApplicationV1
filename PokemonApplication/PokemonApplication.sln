@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokemonManager.test", "..\P
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F49DF4C-A42A-43F9-9546-560EF6A06796}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Entities", "..\Project.Entities\Pokemon.Entities.csproj", "{55EB7D82-D60F-43F9-851D-EC313E3A695A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5F0C91C-8A6A-490A-926E-6A551DB82EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55EB7D82-D60F-43F9-851D-EC313E3A695A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55EB7D82-D60F-43F9-851D-EC313E3A695A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55EB7D82-D60F-43F9-851D-EC313E3A695A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55EB7D82-D60F-43F9-851D-EC313E3A695A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

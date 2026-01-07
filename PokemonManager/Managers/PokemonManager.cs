@@ -34,8 +34,7 @@ namespace PokemonManager.Managers
                 _logger.LogInformation("Started Getting Pokemon list with details");
                 List<Pokemon> pokemons = new();
                 int offset = page == 0 ? 0 : (page - 1) * 10;
-                var responseList = await _pokeApi.GetPokemonListAsync(offset);
-                PokemonListResponse response = ToObject<PokemonListResponse>(responseList);
+                var response = await _pokeApi.GetPokemonListAsync(offset);
                 if (response != null && response.Results != null && response.Results.Count > 0)
                 {
                     List<string> names = response.Results.Select(p => p.Name).ToList();
@@ -95,14 +94,8 @@ namespace PokemonManager.Managers
             if (pokemonServiceResponse == null)
             {
                 _logger.LogInformation("Getting details from PokeAPi for: {Pokemon}", name);
-                var pokemonResponse = await _pokeApi.GetPokemonDataAsync(name);
-                if (pokemonResponse is not JsonElement element ||
-                    element.ValueKind == JsonValueKind.Null ||
-                    element.ValueKind == JsonValueKind.Undefined)
-                {
-                    return null;
-                }
-                pokemonServiceResponse = ToObject<PokemonServiceResponse>(pokemonResponse);
+                 pokemonServiceResponse = await _pokeApi.GetPokemonDataAsync(name);
+                
                 _cache.Set(cacheKey, pokemonServiceResponse);
                 _logger.LogInformation("Got details from PokeAPi for: {Pokemon}", name);
             }
@@ -135,22 +128,6 @@ namespace PokemonManager.Managers
                 _logger.LogError(ex, "Error while searching pokemon");
                 throw;
             }
-        }
-
-        /// <summary>
-        /// Static method to convert JsonElement into Object T
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="element"></param>
-        /// <returns></returns>
-        private static T ToObject<T>(JsonElement element)
-        {
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
-
-            return JsonSerializer.Deserialize<T>(element.GetRawText(), options);
         }
 
         private async Task<string> GetPokemonStoryFromAI(string pokemonName)

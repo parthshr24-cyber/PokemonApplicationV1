@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokemonManager.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace ExternalAPIService.Interfaces
 {
     public interface IPokeClientService
     {
-        Task<dynamic> GetPokemonListAsync(int offset);
-        Task<dynamic> GetPokemonDataAsync(string name);
+        Task<PokemonListResponse> GetPokemonListAsync(int offset);
+        Task<PokemonServiceResponse> GetPokemonDataAsync(string name);
     }
 }

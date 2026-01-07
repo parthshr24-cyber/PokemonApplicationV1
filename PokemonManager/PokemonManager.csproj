@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ExternalAPIService\ExternalAPIService.csproj" />
+    <ProjectReference Include="..\Project.Entities\Pokemon.Entities.csproj" />
   </ItemGroup>
 
 </Project>

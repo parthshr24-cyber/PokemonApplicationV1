@@ -10,7 +10,8 @@
         "dependencies": {
           "Azure.AI.OpenAI": "2.1.0",
           "Azure.Core": "1.50.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.1"
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.1",
+          "Pokemon.Entities": "1.0.0"
         },
         "runtime": {
           "ExternalAPIService.dll": {}
@@ -124,7 +125,12 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {}
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "Pokemon.Entities/1.0.0": {
+        "runtime": {
+          "Pokemon.Entities.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -216,6 +222,11 @@
       "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "Pokemon.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

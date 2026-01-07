@@ -11,3 +11,6 @@ C:\Pro\ExternalAPIService\obj\Debug\net8.0\ExternalAPIService.pdb
 C:\Pro\ExternalAPIService\obj\Debug\net8.0\ref\ExternalAPIService.dll
 C:\Pro\ExternalAPIService\obj\Debug\net8.0\ExternalAPIService.csproj.AssemblyReference.cache
 C:\Pro\ExternalAPIService\obj\Debug\net8.0\ExternalAPIService.sourcelink.json
+C:\Pro\ExternalAPIService\bin\Debug\net8.0\Pokemon.Entities.dll
+C:\Pro\ExternalAPIService\bin\Debug\net8.0\Pokemon.Entities.pdb
+C:\Pro\ExternalAPIService\obj\Debug\net8.0\External.9D17FA8F.Up2Date
